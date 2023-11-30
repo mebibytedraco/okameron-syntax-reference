@@ -115,3 +115,15 @@ BEGIN
     ...
 END;
 ```
+They may return values using the `RETURN()` statement.
+E.g.
+```
+PROCEDURE Add3(a, b, c: INT;): INT;
+VAR result: INT;
+BEGIN
+    result := a + b + c;
+    RETURN(result);
+END;
+```
+The `RETURN()` statement may also be used without arguments, if the procedure
+does not return a value.
