@@ -127,3 +127,21 @@ END;
 ```
 The `RETURN()` statement may also be used without arguments, if the procedure
 does not return a value.
+
+
+## Arrays
+Array types can be created using the following syntax:
+```
+ARRAY <length> OF <element type>;
+```
+The array's length must be either a constant or a literal.
+For example,
+```
+    numbers: ARRAY 10 OF INT;
+    name: ARRAY 32 OF CHAR;
+```
+Array elements can be accessed using square brackets. E.g.
+```
+    aNumber := numbers[3];
+```
+In Okameron, array indexing starts at 0.
