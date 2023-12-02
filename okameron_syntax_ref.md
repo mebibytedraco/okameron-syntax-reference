@@ -1,7 +1,7 @@
 # Informal Okameron Syntax Reference
 
 
-# Syntax used in this document
+## Syntax used in this document
 
 Angle brackets indicate that the contents are a description of what should go 
 there, not literal text.
