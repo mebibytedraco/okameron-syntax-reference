@@ -78,6 +78,44 @@ CONST
 ```
 
 
+## Operators
+
+### Unary Operators
+
+| Symbol    | Name      |
+|-----------|-----------|
+| ~         | not       |
+| -         | negate    |
+
+### Binary Operators
+
+| Symbol    | Name                              |
+|-----------|-----------------------------------|
+| +         | plus                              |
+| -         | minus                             |
+| *         | multiply                          |
+| *\|       | unsigned multiply                 |
+| /         | divide                            |
+| DIV       |                                   |
+| /\|       | unsigned divide                   |
+| UDIV      |                                   |
+| MOD       | modulus                           |
+| UMOD      | unsigned modulus                  |
+| &         | and                               |
+| XOR       | exclusive or                      |
+| OR        | or                                |
+| =         | equals                            |
+| #         | not equals                        |
+| <         | less than                         |
+| >         | greater than                      |
+| <=        | less than or equal to             |
+| >=        | greater than or equal to          |
+| <\|       | unsigned less than                |
+| >\|       | unsigned greated than             |
+| <\|=      | unsigned less than or equal to    |
+| >\|=      | unsigned greater than or equal to |
+
+
 ## Variables
 
 Variables are declared in a `VAR` section, which may appear between the
