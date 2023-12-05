@@ -24,6 +24,14 @@ END.
 ```
 
 
+## Comments
+
+Comments are enclosed by the characters `(*` and `*)`. E.g.
+```
+(* This is a comment in Okameron *)
+```
+
+
 ## Primitive Types
 
 The primitive types in Okameron are
@@ -165,6 +173,68 @@ END;
 ```
 The `RETURN()` statement may also be used without arguments, if the procedure
 does not return a value.
+
+
+## Control Flow
+
+The two primary control flow statements in Okameron are `IF` statements and 
+`WHILE` loops.
+
+### `IF` Statement
+
+The basic `IF` statement takes the following form:
+```
+IF <condition> THEN
+    <statement>
+    ...
+END;
+```
+If the condition is true, the code inside the body will run.  Otherwise, it 
+will be skipped. Conditions do not need to be wrapped in parentheses.
+
+The `IF` statement can also be followed by any number of `ELSIF` statements 
+and/or an `ELSE` statement. The general form is
+```
+IF <condition> THEN
+    <statement>
+    ...
+{ELSIF <condition THEN
+    <statement>
+    ...
+}
+...
+{ELSE
+    <statement>
+    ...
+}
+END;
+```
+The code inside the body of an `ELSIF` statement will only run if its 
+corresponding condition is true and all conditions associated with the 
+preceding `IF`/`ELSIF` statements were false. The code inside the body of an 
+`ELSE` statement will only run if all conditions associated with the preceding 
+`IF`/`ELSIF` statements were false.
+
+
+### `WHILE` Loops
+
+A `WHILE` loop can be created by using the `WHILE` statement as follows:
+```
+WHILE <condition> DO
+    <statement>
+    ...
+END;
+```
+The code inside the body will be executed repeatedly. At the beginning of each 
+iteration, the condition is checked. If it is false, the loop will terminate 
+immediately. Similarly to `IF` statements, the condition does not require 
+parentheses.
+
+The loop can also be terminated early by using the `BREAK()` statement at any 
+point in the loop. Alternatively, the rest of the current iteration can be 
+skipped using the `CONTINUE()` statement.
+
+*TODO: Add examples for both `IF` statements and `WHILE` loops.*
 
 
 ## Arrays
