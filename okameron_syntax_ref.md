@@ -253,3 +253,35 @@ Array elements can be accessed using square brackets. E.g.
     aNumber := numbers[3];
 ```
 In Okameron, array indexing starts at 0.
+
+
+## Records
+
+Record types contain multiple fields of other types that can be accessed 
+independently. They can be declared using the following syntax:
+```
+TYPE <type name> = RECORD
+    <field name>: <field type>;
+    ...
+END;
+```
+For example,
+```
+TYPE Player = RECORD
+    name: ARRAY 16 OF CHAR;
+    hp: INT;
+    level: INT;
+    xp: INT;
+END;
+```
+Variables of this type can be created using the type name provided in the 
+declaration.
+
+The fields of a record can be accessed using the dot (`.`) operator as follows:
+```
+    <record name>.<field name>
+```
+E.g,
+```
+    p1.level := p1.level + 1;
+```
