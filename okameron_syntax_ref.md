@@ -36,10 +36,10 @@ Comments are enclosed by the characters `(*` and `*)`. E.g.
 
 The primitive types in Okameron are
 
-- `Char`
-- `Short`
-- `Int`
-- `Long`
+- `CHAR`
+- `SHORT`
+- `INT`
+- `LONG`
 
 
 ## Literals
