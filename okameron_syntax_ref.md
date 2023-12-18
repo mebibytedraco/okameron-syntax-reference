@@ -198,7 +198,7 @@ and/or an `ELSE` statement. The general form is
 IF <condition> THEN
     <statement>
     ...
-{ELSIF <condition THEN
+{ELSIF <condition> THEN
     <statement>
     ...
 }
