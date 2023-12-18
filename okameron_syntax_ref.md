@@ -285,3 +285,49 @@ E.g,
 ```
     p1.level := p1.level + 1;
 ```
+
+
+## Pointers
+
+Pointer types allow data in memory to be accessed by address. A variable of 
+pointer type can be created by prefixing the type of the data with `POINTER 
+TO`. For example,
+```
+    number: POINTER TO INT;
+```
+The data referenced by a pointer can be accessed using the postfix `^` 
+operator. For example,
+```
+    (* Store the current value pointed to by number into a *)
+    a := number^;
+    (* Replace the value pointed to by number with '7' *)
+    number^ := 7;
+```
+The address of a variable can be obtained using the `PTROF()` operator.
+
+A pointer with no type can be created using the `PTR` type. The memory 
+referenced by this pointer can be accessed using the `GET*()` and `PUT*()` 
+functions:
+
+| Data Size | `GET*()`      | `SET*()`      |
+|-----------|---------------|---------------|
+| `CHAR`    | `GETCHAR()`   | `PUTCHAR()`   |
+| `SHORT`   | `GETSHORT()`  | `PUTSHORT()`  |
+| `INT`     | `GETINT()`    | `PUTINT()`    |
+| `LONG`    | `GETLONG()`   | `PUTLONG()`   |
+
+The `GET*()` functions take one parameter, the address to be accessed, and 
+return the data of the specified type at that address. The `SET*()` functions 
+take two parameters; the first is the address, and the second is the data to 
+write at that address.
+
+
+## Imports
+
+To use procedures and variables declared in other modules, the `IMPORT` 
+statement must be used. It occurs just after the line containing the `MODULE` 
+keyword, and has the following syntax:
+```
+    IMPORT {<module name>, }... <module name>;
+```
+
