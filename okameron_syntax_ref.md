@@ -322,6 +322,20 @@ take two parameters; the first is the address, and the second is the data to
 write at that address.
 
 
+## Procedure Pointers
+
+In addition to accessing data, pointers can also be used to call procedures 
+using the `CALL()` operator, which has the following syntax:
+```
+    CALL(<procedure address>{, <argument>}...);
+```
+This operator evaluates to the value returned by the procedure, meaning it can 
+be used just like a normal procedure call.
+
+Similarly to variables, the address of a procedure can also be obtained using 
+the `PTROF()` operator.
+
+
 ## Imports
 
 To use procedures and variables declared in other modules, the `IMPORT` 
