@@ -331,3 +331,17 @@ keyword, and has the following syntax:
     IMPORT {<module name>, }... <module name>;
 ```
 
+
+## Platform-Specific Details
+
+### fox32
+
+#### Sizes of Primitive Types
+
+| Type  | Size (bits)   |
+|-------|---------------|
+| CHAR  | 8             |
+| SHORT | 16            |
+| INT   | 32            |
+| LONG  | 32            |
+| PTR   | 32            |
