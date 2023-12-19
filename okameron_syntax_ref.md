@@ -347,6 +347,21 @@ keyword, and has the following syntax:
     IMPORT {<module name>, }... <module name>;
 ```
 
+## Using with Assembly Language
+
+### Including Assembly Code
+
+Assembly code can be included using the `ASM` statement. Its syntax is as 
+follows:
+```
+    ASM "<name of assembly source file>";
+```
+*TODO: Determine where exactly this statement is valid*
+
+### `EXTERN` Declarations
+
+*TODO: Write this section*
+
 
 ## Platform-Specific Details
 
