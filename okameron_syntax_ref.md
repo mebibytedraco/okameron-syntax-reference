@@ -335,6 +335,8 @@ be used just like a normal procedure call.
 Similarly to variables, the address of a procedure can also be obtained using 
 the `PTROF()` operator.
 
+*TODO: Add examples for procedure pointers*
+
 
 ## Imports
 
