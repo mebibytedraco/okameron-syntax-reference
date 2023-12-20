@@ -363,6 +363,24 @@ follows:
 *TODO: Write this section*
 
 
+## Bugs
+
+### Accessing members of records in arrays
+
+Record members cannot be accessed if the record is an element of an array. For 
+example,
+```
+    someArray[0].something := somethingElse;
+```
+would cause an error.
+
+A work-around is to use a pointer to access the record, as shown below.
+```
+    localSomeArray0 := PTROF(someArray[0]);
+    localSomeArray0^.something := somethingElse;
+```
+
+
 ## Platform-Specific Details
 
 ### fox32
