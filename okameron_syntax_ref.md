@@ -230,11 +230,26 @@ iteration, the condition is checked. If it is false, the loop will terminate
 immediately. Similarly to `IF` statements, the condition does not require 
 parentheses.
 
+Okameron does not have for loops, but the functionality can be replicated using 
+a `WHILE` loop. E.g,
+```
+PROCEDURE ForLoopUsingWhileExample();
+VAR i: INT;
+BEGIN
+    i := 0;
+    WHILE i <| 10 DO
+        (* add some code here *)
+        i := i + 1;
+    END;
+END;
+```
+
 The loop can also be terminated early by using the `BREAK()` statement at any 
 point in the loop. Alternatively, the rest of the current iteration can be 
 skipped using the `CONTINUE()` statement.
 
-*TODO: Add examples for both `IF` statements and `WHILE` loops.*
+*TODO: Add an example for `IF` statement, and another example for `WHILE` 
+loop.*
 
 
 ## Arrays
