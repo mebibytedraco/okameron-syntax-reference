@@ -395,6 +395,13 @@ PROCEDURE`:
 ```
 A return type is required, even if it is unused.
 
+### Calling Convention
+
+#### fox32
+
+Procedures can have a maximum of 8 parameters, which are passed in registers 
+r0-r7. The return value is stored in register r0.
+
 
 ## Bugs
 
