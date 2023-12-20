@@ -360,7 +360,21 @@ follows:
 
 ### `EXTERN` Declarations
 
-*TODO: Write this section*
+Variables that are defined in assembly files must be declared using the 
+`EXTERN` statement, which has the following syntax:
+```
+    EXTERN {<variable name>, }... <variable name>: <type>;
+```
+The `EXTERN` statement can also be used to declare constants defined in 
+assembly, with the side effect that the `PTROF()` operator must be used to 
+access the constant's value.
+
+Procedures declared in assembly files must be declared similarly, using `EXTERN 
+PROCEDURE`:
+```
+    EXTERN PROCEDURE {<procedure name>, }... <procedure name>: <return type>;
+```
+A return type is required, even if it is unused.
 
 
 ## Bugs
