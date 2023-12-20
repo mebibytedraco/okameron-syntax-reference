@@ -149,6 +149,8 @@ example,
     inputCharacter := 41H;
     reallyLongNumber := 1234567890;
 ```
+The initial value of a variable is undefined; it must be assigned a value 
+inside a procedure before use.
 
 
 ## Procedures
@@ -438,3 +440,7 @@ A work-around is to use a pointer to access the record, as shown below.
 | INT   | 32            |
 | LONG  | 32            |
 | PTR   | 32            |
+
+#### Global Variable Initialization
+
+Global variables are initialized to zero.
