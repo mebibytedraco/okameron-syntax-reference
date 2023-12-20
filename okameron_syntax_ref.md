@@ -269,6 +269,10 @@ Array elements can be accessed using square brackets. E.g.
 ```
 In Okameron, array indexing starts at 0.
 
+Similarly to C, array parameters to procedures are handled by automatically 
+converting them to pointers to the array's first element, and they may be 
+handled as such.
+
 
 ## Records
 
