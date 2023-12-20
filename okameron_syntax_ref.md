@@ -301,6 +301,10 @@ E.g,
     p1.level := p1.level + 1;
 ```
 
+Procedures may not have parameters of record types. They may, however, have 
+parameters whose type is `POINTER TO <record type>`, or `ARRAY <size> of 
+<record type>`.
+
 
 ## Pointers
 
