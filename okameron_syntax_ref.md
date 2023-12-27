@@ -426,6 +426,17 @@ A work-around is to use a pointer to access the record, as shown below.
     localSomeArray0^.something := somethingElse;
 ```
 
+### Expression including procedure call as the argument of a return statement
+
+If the argument to a return statement is an arithmetic expression involving a
+function call, the returned value may be incorrect. For example, assuming
+`Three()` is a procedure defined to always return 3,
+```
+    RETURN(4 + Three());
+```
+may not always return 7. To be safe, store the result of the expression to a
+variable and return that.
+
 
 ## Platform-Specific Details
 
