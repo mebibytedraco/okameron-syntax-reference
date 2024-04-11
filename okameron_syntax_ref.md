@@ -444,6 +444,8 @@ pass the parameter will not be restored, and will instead be updated to match
 the new value upon return. This should be kept in mind when writing assembly
 code that calls Okameron functions.
 
+*TODO: determine whether this is intended behavior*
+
 
 ## Platform-Specific Details
 
