@@ -437,6 +437,13 @@ function call, the returned value may be incorrect. For example, assuming
 may not always return 7. To be safe, store the result of the expression to a
 variable and return that.
 
+### Register values after changing parameter inside function
+
+If a function changes the value of one of its parameters, the register used to
+pass the parameter will not be restored, and will instead be updated to match
+the new value upon return. This should be kept in mind when writing assembly
+code that calls Okameron functions.
+
 
 ## Platform-Specific Details
 
