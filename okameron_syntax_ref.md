@@ -95,6 +95,8 @@ CONST
 | ~         | not       |
 | -         | negate    |
 
+*TODO: 'not' operator only compiles correctly when used as postfix. Determine whether this is intended behavior or a bug.*
+
 ### Binary Operators
 
 | Symbol    | Name                              |
